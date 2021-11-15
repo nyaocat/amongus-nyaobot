@@ -36,7 +36,7 @@ const amongUsColors = [
 const auEmojiNameSet = new Set(amongUsColors.map((x) => 'au' + x));
 
 const client = new Client();
-const {botId, token}  = JSON.parse(readFileSync('./config.json'));
+const {botId, token}  = JSON.parse(readFileSync('./config.json').toString());
 
 const updateMessage = async (
   msg: Message,
